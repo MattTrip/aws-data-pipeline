@@ -1,5 +1,5 @@
 # aws-data-pipeline
- end to end data engineering pipeline in AWS
+end to end data engineering pipeline in AWS
 AWS end-to-end data pipeline: from file to fancy dashboard and everything in-between
 Author: Albert Ngan
 With help from: Edwin, Shaohua, Ziyang, Zheng, Bhargavi
@@ -7,8 +7,7 @@ With help from: Edwin, Shaohua, Ziyang, Zheng, Bhargavi
 
 ## Introduction
 This project demonstrates an end-to-end data pipeline implemented, exclusively using AWS infrastructure. All steps from initial raw data feed to final visualization are included. 
-They include:
-Data file ingestion
+
 
 ## Architecture
 ![pipeline](images/pipeline-diagram.jpeg)
@@ -31,19 +30,17 @@ Data file ingestion
 3.  Airflow (running on a AWS EC2 instance) will take over to orchestrate further tasks
 4.  Airflow will spark-submit the job to to Amazon EMR
 5.  EMR will output the partition data into the designated s3 output path
-
 6.  Glue will run a crawler on the output data to infer the schema
 7.  Athena will be used to perform SQL queries on the data and provide the interface to connect to Superset in the next step
-
 8.  Superset will provide dashboard visualizations 
 
 
 ## How to use this project
 
 
-
-## Future Improvements when time permits
-* Deployment using k8s
+## Future Improvements
+* Deployment on EKS
+* Implement Spark engine in Scala
 * Include additional configuration-driven parameters for spark engine
 * Customizing the Glue-created tablename
 * Using password stores/vaults for improved security
