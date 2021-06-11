@@ -8,4 +8,4 @@ They include:
 Data file ingestion
 
 # Architecture
-!(images/pipeline-diagram.jpeg)
+![pipeline](images/pipeline-diagram.jpeg)
