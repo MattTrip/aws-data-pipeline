@@ -10,15 +10,13 @@ This project demonstrates an end-to-end data pipeline implemented exclusively us
 ![pipeline](images/pipeline-diagram-v2.jpeg)
 
 ## Pipeline Flow
-1.  Raw data file: is directly uploaded to the designated Amazon s3 ‘source’ bucket
-    This data file type may be csv, json, or parquet
-    Required runtime parameters: are extracted from a json file 
-    They include:
-    -- input_file_type
-    -- output_file_type
-    -- name
-    -- partition_column
-    -- output_path
+1.  Raw data file: is directly uploaded to the designated Amazon s3 ‘source’ bucket. This data file type may be csv, json, or parquet
+    Required runtime parameters are extracted from a json parameters file located in another s3 folder. Mandatory parameters:  
+    -- input_file_type  
+    -- output_file_type  
+    -- name  
+    -- partition_column  
+    -- output_path  
 
 2.  Upload of the raw data file will trigger the lambda function which will: 
     Identify the (just uploaded) file details 
@@ -48,7 +46,7 @@ This project demonstrates an end-to-end data pipeline implemented exclusively us
 ## Airflow setup on Docker
 * Instantiate a T2.medium AWS EC2 instance
 * Install and start Docker
-* See included yaml file for special 
+* See included yaml file 
 
 
 ## Important notes
