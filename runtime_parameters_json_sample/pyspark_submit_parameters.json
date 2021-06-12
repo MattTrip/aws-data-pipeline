@@ -1,0 +1,7 @@
+{
+    "name":"demo", 
+    "input_file_type":"csv", 
+    "output_path":"s3://wcd-midterm-proj/dataoutput", 
+    "partition_column": "country",
+    "output_file_type":"parquet"	
+}

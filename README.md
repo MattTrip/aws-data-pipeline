@@ -25,9 +25,9 @@ This project demonstrates an end-to-end data pipeline implemented exclusively us
     Read the runtime parameters required later for spark 
     Call the Airflow API endpoint to run the Airflow DAG
     
-3.  Airflow (running on a AWS EC2 instance) will take over to orchestrate further tasks
+3.  Airflow (running on AWS EC2 instance) will take over to orchestrate further tasks
 
-4.  Airflow will spark-submit the job to to Amazon EMR
+4.  Airflow will run the Spark job on Amazon EMR Cluster
 
 5.  EMR will output the partition data into the designated s3 output path
 
@@ -35,10 +35,11 @@ This project demonstrates an end-to-end data pipeline implemented exclusively us
 
 7.  Athena will be used to perform SQL queries on the data and provide the interface to connect to Superset in the next step
 
-8.  Finally, Apache Superset can create provide dashboard visualizations for futher interpretation and consumption
+8.  Apache Superset can create provide dashboard visualizations for futher interpretation and consumption
 
 
 ## How to use this project
+
 
 
 ## Future Improvements
