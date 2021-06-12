@@ -41,7 +41,7 @@ This project demonstrates an end-to-end data pipeline implemented exclusively us
 ## Superset setup on Docker
 Instantiate a T2.medium AWS EC2 instance
 Install and start Docker
-Use the Superset image here: 'docker pull edwinguo123/superset'
+Use the Superset image here: `docker pull edwinguo123/superset`
 This image of Superset has the Athena plugin baked in to make connection quick and easy
 
 
