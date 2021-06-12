@@ -38,8 +38,21 @@ This project demonstrates an end-to-end data pipeline implemented exclusively us
 8.  Apache Superset can create provide dashboard visualizations for futher interpretation and consumption
 
 
-## How to use this project
+## Superset setup on Docker
+Instantiate a T2.medium AWS EC2 instance
+Install and start Docker
+Use the Superset image here: 'docker pull edwinguo123/superset'
+This image of Superset has the Athena plugin baked in to make connection quick and easy
 
+
+## Airflow setup on Docker
+
+
+
+## Important notes
+* Airflow and Superset should be run on T2.medium EC2 instances, at minimum
+* After an EC2 instance is stopped and then restarted, it will be assigned a new external IP address. This IP address must be updated  wherever it is used
+* After an EMR Cluster is terminated and re-cloned at a later time, it will be assigned a new Cluster ID. This Cluster ID must be updated in the code wherever it is used
 
 
 ## Future Improvements
