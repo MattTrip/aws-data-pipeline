@@ -7,7 +7,7 @@ With help from: Edwin, Shaohua, Ziyang, Zheng, Bhargavi
 This project demonstrates an end-to-end data pipeline implemented exclusively using AWS infrastructure. All steps from initial raw data feed to final visualization are included. 
 
 ## Architecture
-![pipeline](images/pipeline-diagram.jpeg)
+![pipeline](images/pipeline-diagram-v2.jpeg)
 
 ## Pipeline Flow
 1.  Raw data file: is directly uploaded to the designated Amazon s3 ‘source’ bucket
