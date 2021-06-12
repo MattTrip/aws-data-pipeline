@@ -1,6 +1,6 @@
 # aws-data-pipeline
-This is a demonstration of an end-to-end data engineering pipeline implemented in AWS
-Author: Albert Ngan
+This is a demonstration of an end-to-end data engineering pipeline implemented in AWS  
+Author: Albert Ngan  
 With help from: Edwin, Shaohua, Ziyang, Zheng, Bhargavi
 
 ## Introduction
@@ -51,7 +51,7 @@ This project demonstrates an end-to-end data pipeline implemented exclusively us
 
 ## Important notes
 * Airflow and Superset should be run on T2.medium EC2 instances, at minimum
-* After an EC2 instance is stopped and then restarted, it will be assigned a new external IP address. 
+* After an EC2 instance is stopped and then restarted, it will be assigned a new external IP address
 * This IP address must be updated wherever it is used including:
     1. Within the Lambda function
     2. In your web browser to view the Airflow webserver UI
